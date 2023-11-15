@@ -8,12 +8,16 @@
   <a href="/memory">Memory</a>
   <a href="/telltale">Telltale</a>
   <a href="/photoapp">Photo App</a>
-
+  <a href="/register">Register</a>
+  <a href="/login">Login</a>
+  
   <a
     target="_blank" rel="noreferrer"
-    href="https://github.com/lisaviktorsson/lisaviktorsson.github.com"
-    >GitHub</a
+    href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+    >press here</a
   >
+
+  
 </nav>
 
 <hr />
