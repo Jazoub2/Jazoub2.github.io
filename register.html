@@ -5,18 +5,19 @@
 		<link rel="icon" href="./favicon.png" />
 		<meta name="viewport" content="width=device-width" />
 		<meta http-equiv="content-security-policy" content="">
-		<link href="./_app/immutable/assets/_page-917285b2.css" rel="stylesheet">
-		<link rel="modulepreload" href="./_app/immutable/start-61b4625c.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/index-7441187f.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/singletons-1fab6688.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/index-018f3826.js">
+		<link href="./_app/immutable/assets/_layout-19c1d919.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/_page-283f4152.css" rel="stylesheet">
+		<link rel="modulepreload" href="./_app/immutable/start-5cea8cdc.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index-2b9916c0.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/singletons-542b01e3.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index-cf7d6660.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/preload-helper-41c905a7.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/control-f5b05b5f.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/parse-f0c618df.js">
-		<link rel="modulepreload" href="./_app/immutable/components/pages/_layout.svelte-52e9c247.js">
+		<link rel="modulepreload" href="./_app/immutable/components/pages/_layout.svelte-3e13867d.js">
 		<link rel="modulepreload" href="./_app/immutable/modules/pages/_layout.js-9cbb603b.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/_layout-da46b06b.js">
-		<link rel="modulepreload" href="./_app/immutable/components/pages/register/_page.svelte-21a435db.js">
+		<link rel="modulepreload" href="./_app/immutable/components/pages/register/_page.svelte-67b321ba.js">
 	</head>
 	<body>
 		<div style="display: contents">
@@ -26,37 +27,61 @@
   <a href="/memory">Memory</a>
   <a href="/telltale">Telltale</a>
   <a href="/photoapp">Photo App</a>
-  <a href="/register">Register</a>
-  <a href="/login">Login</a>
+  <a id="princess" href="/register" class="svelte-1rai6bt">PrincessRegister</a>
+  <a id="princess" href="/login" class="svelte-1rai6bt">PrincessLogin</a>
+  <a id="prince" href="/princeregister" class="svelte-1rai6bt">PrinceRegister</a>
+  <a id="prince" href="/pricelogin" class="svelte-1rai6bt">PrinceLogin</a>
   
   <a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">press here</a></nav>
 
 <hr>
 
-<body><form class="svelte-1j0niap"><h1 class="svelte-1j0niap">Registration form</h1>
-        <div><div class="Fullname svelte-1j0niap"><label for="Firstname" class="svelte-1j0niap">First Name:</label>
-                <input id="Firstname" type="text" class="svelte-1j0niap" value="">
-                <label for="Lastname" class="svelte-1j0niap">Last Name:</label>
-                <input id="Lastname" type="text" class="svelte-1j0niap" value=""></div>
-            <div class="empass svelte-1j0niap"><label for="Email" class="svelte-1j0niap">Email:</label>
-                <input id="Email" type="email" class="svelte-1j0niap" value="">
-                <label for="Password" class="svelte-1j0niap">Password:</label>
-                <input id="Password" type="password" class="svelte-1j0niap" value=""></div></div>
-            <div><button type="submit" class="svelte-1j0niap">Register</button></div>
-            <a id="login" href="/login" class="svelte-1j0niap">Already have an account?</a></form>
-</body>
+<div id="alert" class="svelte-buyzyl"><span class="closebtn svelte-buyzyl" onclick="this.parentElement.style.display='none';">×</span>
+        <strong>Dessa adresser stämmer inte överens!</strong>Vänligen skriv om igen </div>
+
+    <body><form class="svelte-buyzyl"><h1 class="svelte-buyzyl">Princess registration form</h1>
+
+            <div><div class="Fullname svelte-buyzyl"><label for="Firstname" class="svelte-buyzyl">First Name:</label>
+                    <input id="Firstname" type="text" class="svelte-buyzyl" value="">
+                    <label for="Lastname" class="svelte-buyzyl">Last Name:</label>
+                    <input id="Lastname" type="text" class="svelte-buyzyl" value=""></div>
+
+                <div class="empass svelte-buyzyl"><label for="Email" class="svelte-buyzyl">Email:</label>
+                    <input id="Email" type="email" class="svelte-buyzyl" value="">
+                    <label for="Repeatemail" class="svelte-buyzyl">Repeat Email:</label>
+                    <input id="Email" type="email" class="svelte-buyzyl" value="">
+                    <label for="Password" class="svelte-buyzyl">Password:</label>
+                    <input id="Password" type="password" class="svelte-buyzyl" value="">
+                    <label for="Phonenumber" class="svelte-buyzyl">Phonenumber:</label>
+                    <input id="Phonenumber" type="number" class="svelte-buyzyl" value="">
+
+                    <div><label id="criminal" for="criminal" class="svelte-buyzyl">Any criminal history?</label>
+                        <label class="svelte-buyzyl"><input type="radio" name="criminal" value="yes" class="svelte-buyzyl"> yes
+                        </label>
+                        <label class="svelte-buyzyl"><input type="radio" name="criminal" value="no" class="svelte-buyzyl"> no
+                        </label></div>
+                    <div><label id="license" for="license" class="svelte-buyzyl">Do you have a drivers license</label>
+                        <label class="svelte-buyzyl"><input type="radio" name="license" value="yes" class="svelte-buyzyl"> yes
+                        </label>
+                        <label class="svelte-buyzyl"><input type="radio" name="license" value="no" class="svelte-buyzyl"> no
+                        </label></div></div></div>
+                <div><button type="submit" class="svelte-buyzyl">Register</button></div>
+
+                <a id="login" href="/login" class="svelte-buyzyl">Already have an account?</a>
+                <a id="princess" href="/princeregister" class="svelte-buyzyl">Are you a prince?</a></form>
+    </body>
 
 
-		<script type="module" data-sveltekit-hydrate="b3iji2">
-			import { start } from "./_app/immutable/start-61b4625c.js";
+		<script type="module" data-sveltekit-hydrate="w5d3n6">
+			import { start } from "./_app/immutable/start-5cea8cdc.js";
 
 			start({
 				env: {},
 				paths: {"base":"","assets":""},
-				target: document.querySelector('[data-sveltekit-hydrate="b3iji2"]').parentNode,
-				version: "1700041476236",
+				target: document.querySelector('[data-sveltekit-hydrate="w5d3n6"]').parentNode,
+				version: "1701175914405",
 				hydrate: {
-					node_ids: [0, 12],
+					node_ids: [0, 14],
 					data: [null,null],
 					form: null
 				}
