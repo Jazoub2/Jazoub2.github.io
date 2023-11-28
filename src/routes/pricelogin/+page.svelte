@@ -7,37 +7,43 @@
 
     <body>
         <form on:submit|preventDefault={handleSubmit}>
-            <h1>Princess login</h1>
+            <h1>Prince login</h1>
                 <div class="empass">
                     <label for="Email">Email:</label>
                     <input id="Email"type="email"/>
                     <label for="Password">Password:</label>
                     <input id="Password"type="password"/>
                 </div>
-                <div><button type="submit">login</button></div>
+                <div><button type="submit">Login</button></div>
         </form>
     </body>
     
     <style>
         h1{
-          color:#ee4991;
+          color:#3493f3;
           
         }
         input{
-            color: #ee4991; 
+            color: #1169c1; 
             font-size: medium;
             font-weight: 900;
-            background-color:#f7adbf;
+            background-color:#85b6e6;
             border: 10px solid transparent;
+
     
         }
+
+        input:focus{
+            outline: none !important;
+            background-color: #5aa3ec;
+        }
         label{
-            background-color: pink;
+            background-color: #add2f7;
     
         }
         button{
-            background-color: #f7adbf;
-            color: #ee4991;
+            background-color: #add2f7;
+            color: #3493f3;
             border-radius: 25px;
             width: 50%;
             font-size: large;
@@ -56,8 +62,8 @@
             font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
             font-size: larger;
             font-weight: bold;
-            color: rgb(221, 87, 137);
-            background-color: pink;
+            color: #3493f3;
+            background-color: #add2f7;
             display: inline-block;
             width: 120vw;
             max-width: 500px;

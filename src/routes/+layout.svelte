@@ -8,8 +8,10 @@
   <a href="/memory">Memory</a>
   <a href="/telltale">Telltale</a>
   <a href="/photoapp">Photo App</a>
-  <a href="/register">Register</a>
-  <a href="/login">Login</a>
+  <a id="princess" href="/register">PrincessRegister</a>
+  <a id="princess"href="/login">PrincessLogin</a>
+  <a id="prince" href="/princeregister">PrinceRegister</a>
+  <a id="prince"href="/pricelogin">PrinceLogin</a>
   
   <a
     target="_blank" rel="noreferrer"
@@ -23,3 +25,12 @@
 <hr />
 
 <slot />
+
+<style>
+#prince{
+  color:blue;
+}
+#princess{
+  color:deeppink;
+}
+</style>
