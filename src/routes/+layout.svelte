@@ -12,6 +12,7 @@
   <a id="princess"href="/login">PrincessLogin</a>
   <a id="prince" href="/princeregister">PrinceRegister</a>
   <a id="prince"href="/pricelogin">PrinceLogin</a>
+  <a id="todo"href="/todo">todo</a>
   
   <a
     target="_blank" rel="noreferrer"
@@ -27,6 +28,9 @@
 <slot />
 
 <style>
+#todo{
+  color:coral;
+}
 #prince{
   color:blue;
 }
