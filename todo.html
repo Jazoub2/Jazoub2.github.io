@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width" />
 		<meta http-equiv="content-security-policy" content="">
 		<link href="./_app/immutable/assets/_layout-269491ef.css" rel="stylesheet">
-		<link href="./_app/immutable/assets/_page-689dfaae.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/_page-ed6b927b.css" rel="stylesheet">
 		<link rel="modulepreload" href="./_app/immutable/start-70911c3f.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/index-2b9916c0.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/singletons-542b01e3.js">
@@ -17,7 +17,7 @@
 		<link rel="modulepreload" href="./_app/immutable/components/pages/_layout.svelte-e21ea5be.js">
 		<link rel="modulepreload" href="./_app/immutable/modules/pages/_layout.js-9cbb603b.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/_layout-da46b06b.js">
-		<link rel="modulepreload" href="./_app/immutable/components/pages/login/_page.svelte-722127e8.js">
+		<link rel="modulepreload" href="./_app/immutable/components/pages/todo/_page.svelte-9cf0d289.js">
 	</head>
 	<body>
 		<div style="display: contents">
@@ -37,25 +37,30 @@
 
 <hr>
 
-<body><form class="svelte-1592mwa"><h1 class="svelte-1592mwa">Princess login</h1>
-                <div class="empass svelte-1592mwa"><label for="Email" class="svelte-1592mwa">Email:</label>
-                    <input id="Email" type="email" class="svelte-1592mwa">
-                    <label for="Password" class="svelte-1592mwa">Password:</label>
-                    <input id="Password" type="password" class="svelte-1592mwa"></div>
-                <div><button type="submit" class="svelte-1592mwa">login</button></div></form>
-    </body>
+<div class="container svelte-ftzmqf"><div id="todoborder" class="svelte-ftzmqf"><h1 style="padding-left:38px" class="svelte-ftzmqf">(HACKER) TODO LIST</h1></div>
+    <div class="layout svelte-ftzmqf"><div id="todo" class="svelte-ftzmqf"><h1 style="padding-left:10px" class="svelte-ftzmqf">TODO</h1>
+                <input type="text" class="svelte-ftzmqf">
+                <button id="todobutton" class="svelte-ftzmqf">+</button>
+                <ul></ul></div>
+
+        <div id="Doing" class="svelte-ftzmqf"><h1 class="svelte-ftzmqf">Doing</h1>
+            </div>
+
+        <div id="completed" class="svelte-ftzmqf"><h1 class="svelte-ftzmqf">Done</h1>
+            </div></div>
+</div>
 
 
-		<script type="module" data-sveltekit-hydrate="jdghdu">
+		<script type="module" data-sveltekit-hydrate="hbno7l">
 			import { start } from "./_app/immutable/start-70911c3f.js";
 
 			start({
 				env: {},
 				paths: {"base":"","assets":""},
-				target: document.querySelector('[data-sveltekit-hydrate="jdghdu"]').parentNode,
+				target: document.querySelector('[data-sveltekit-hydrate="hbno7l"]').parentNode,
 				version: "1702310019913",
 				hydrate: {
-					node_ids: [0, 9],
+					node_ids: [0, 19],
 					data: [null,null],
 					form: null
 				}
