@@ -1,25 +1,34 @@
 <script>
     import { fade, fly } from 'svelte/transition';
-  
+   
     // Define parallax layers
-    const layers = [0, 1, 2, 3];
+    const layers = [0, 1];
   
     // Define messages for scrollytelling
     const messages = [
-      'Keep scrolling...',
-      'More scrolling...',
-      'Almost there...',
-      'You did it!',
-      'You are done!'
+      "Beware intrepid traveler",
+      "Watch thyself",
+      "Thou shalt not be here",
+      "Leave whenneth thou still haveth thyne soul",
+      "Halt! He's coming. Save thyneself!"
     ];
+    const images = [
+      "",
+      "/eyeball.png",
+      "https://images.squarespace-cdn.com/content/v1/6051793d0c5c911997546d5f/c7c83784-a1ec-4ae9-9165-b4a98ffa9fd0/Scary+monster+pictures+5.png",
+     "https://pics.craiyon.com/2023-07-25/3e5039258c714506b9e200a9c569b611.webp"
+
+    ]
   
     // Initialize scroll position, message index, and fader
     let y = 0;
     let currentMessageIndex = 0;
     let fader = true;
     $: currentMessage = messages[currentMessageIndex];
+    $: currentImg = images[currentMessageIndex];
+
     // Calculate the step size for message changes
-    const step = Math.floor(600 / messages.length);
+    const step = Math.floor(1000 / messages.length);
 
     // Function to handle scroll events
     function handleScroll() {
@@ -30,6 +39,7 @@
   
       // Update the fader state based on message change
       fader = currentMessageIndex === tempIndex;
+      //currentImg = images[currentMessageIndex];
     }
   </script>
   
@@ -39,9 +49,9 @@
     <!-- Parallax container for layers -->
     <div class="container">
       {#each layers as layer}
-        <img
-          style="transform: translate(0, {y < 2 ? y * layer : -y * layer / (layers.length - 1)}px)"
-          src={`https://www.devsamples.com/parallax-layer${layer}.png`}
+        <img class = "background"
+          style="transform: translate(0, {y < 2 ? y * layer : -y * layer / (layers.length - 3)}px)"
+          src={`/backgroundwebb${layer}.png`}
           alt={`parallax layer ${layer}`}
         >
       {/each}
@@ -51,39 +61,46 @@
     <div class="text">
         {#if fader && currentMessageIndex > 0}
           <!-- Animate text with fly-in and fade-out transitions -->
-            <div class="story" in:fly={{ y: 200, duration: 2000 }} out:fade>
-                <p>You have scrolled {y} pixels</p>
+            <div class="story" in:fly={{ y: 400, duration: 2000 }} out:fade>
+                <p> {Math.round(y)} meters below the mortal world</p>
                 <p>{currentMessage}</p>
-                <img src="https://www.onlygfx.com/wp-content/uploads/2021/02/6-pixel-heart-1.png" alt="heart"> 
+                <div class="bild" style="background-image:url({currentImg});" ></div>
             </div>
           {:else if currentMessageIndex === 0 }
-          <p>You have scrolled {y} pixels</p>
+          <p>{Math.round(y)} meters below the mortal world</p>
           <p>{currentMessage}</p>
         {/if}
     </div>
   </main>
   
   <style>
+    .bild{
+      width: 200px;
+      height: 200px;
+      margin: auto;
+      background-size: cover;
+      border-radius: 50%;
+    }
     :global(body) {
       margin: 0;
       padding: 0;
-      background-color: #121212;
+      background-color: #000000;
     }
   
     main {
-      height: 1200px;
+      height: 1500px;
     }
  
     .story img{
-        width:300px;
+        width: 300px;
         bottom:0;
     }
   
     .container {
       position: relative;
-      height: 100vh;
+      height: 100%;
       width: 100%;
-      overflow: hidden; /* Clip overflow for parallax effect */
+      overflow: hidden;
     }
   
   
@@ -106,7 +123,9 @@
       color: white;
 
     }
-  
+  .background{
+    height: 100%;
+  }
 
   </style>
   

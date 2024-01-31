@@ -13,6 +13,8 @@
   <a id="prince" href="/princeregister">PrinceRegister</a>
   <a id="prince"href="/pricelogin">PrinceLogin</a>
   <a id="todo"href="/todo">todo</a>
+  <a id="chat"href="/chat">chat</a>
+  <a id="scroll"href="/scroll">Scroll</a>
   
   <a
     target="_blank" rel="noreferrer"
@@ -31,6 +33,16 @@
 #todo{
   color:coral;
 }
+#scroll{
+  color:red;
+  background-color: rgba(80, 9, 9, 0.623);
+}
+
+#chat{
+  color:turquoise;
+  background-color: rgba(14, 61, 90, 0.413);
+}
+
 #prince{
   color:blue;
 }
