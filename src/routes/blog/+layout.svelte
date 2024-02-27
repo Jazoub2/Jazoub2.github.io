@@ -1,8 +1,7 @@
 <script>
-    import '../../app.css'
+    import '../../app.pcss'
 
 </script>
-
 
 
 <main class="container">

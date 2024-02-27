@@ -1,3 +1,11 @@
+<script>
+  import { CodeBlock } from '@skeletonlabs/skeleton';
+  </script>
+  
+  <div style=" margin:auto; width:70vw;">
+  <CodeBlock language="python" code={`print("hello world!")`}>
+  </CodeBlock>
+  </div>
 
 <h1>
   Abandon every hope all ye who enter here!

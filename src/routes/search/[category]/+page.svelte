@@ -10,7 +10,11 @@
   <!-- TODO: Style the results -->
   <div>
     {#each data.response as item}
-      <article><p>{JSON.stringify(item)}</p></article>
+      <article>
+        {#each Object.entries(item) as [key, value]}
+          <p class ={key}>{key + ": " + value}</p>
+        {/each}
+      </article>
     {/each}
   </div>
 </main>

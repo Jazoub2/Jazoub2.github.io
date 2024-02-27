@@ -1,0 +1,32 @@
+---
+title: ElizaBot
+date: "2024-02-02"
+keywords: [Föredetta upg, CHATBOT, JavaScipt]
+---
+ElizaBot
+
+<script>
+import { CodeBlock } from '@skeletonlabs/skeleton';
+
+</script>
+
+<article>
+<div class ="tempclass">
+    <div>
+        <CodeBlock language="html" code={`<div>This is meta</div>`}></CodeBlock>
+    </div>
+    <div>
+        <CodeBlock language="html" code={`<div>This is meta</div>`}></CodeBlock>
+    </div>
+    <div>
+        <CodeBlock language="html" code={`<div>This is meta</div>`}></CodeBlock>
+    </div>
+</div>
+</article>
+
+<style>
+.tempclass{
+    grid-template-columns:repeat(3,1fr);
+    background-color: red;
+}
+</style>
