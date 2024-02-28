@@ -101,18 +101,7 @@ width:100%;
 height:100%;
     margin: auto;
 }
-#selectedPrice{
-    /*
-    position: relative;
-    bottom: 50px;
-    left: 180px;
-   */
-}
-#selectedName{
-   /*position: relative;
-    top: 50px;
-    left: 180px;*/
-}
+
 .Grid{
         margin: auto;
         height: 100vh;
