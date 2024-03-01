@@ -2,7 +2,7 @@
 
 import "../app.pcss";
 let links = ["/memory","/telltale","/photoapp","/register","/login","/princeregister","/pricelogin","/todo","/chat",
-"/scroll","/blog","/search","/clikcerlogin","/romaninput","candycrushah","/sellingpoint","/sellingshop"]
+"/scroll","/blog","/search","/clikcerlogin","/romaninput","/candycrushah","/sellingpoint","/sellingshop"]
 
 </script>
 
